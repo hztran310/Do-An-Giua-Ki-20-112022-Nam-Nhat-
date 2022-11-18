@@ -1,7 +1,7 @@
 # Do-An-Giua-Ki-20/11/2022-Nam-Nhat
 Code Khong Bug => Cần test lại 
 
-Nội Dung : Giải Phuong Trình X 
+Nội Dung : Giải Phương Trình X 
 Dạng 1 : Phương Trình Ax + B = 0 
 Dạng 2 : Phương Trình Ax + B = Cx + D
 
