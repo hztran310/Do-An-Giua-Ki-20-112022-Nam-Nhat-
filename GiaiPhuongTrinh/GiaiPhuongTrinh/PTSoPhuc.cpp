@@ -29,8 +29,16 @@ int GiaiPhuongTrinh_SoPhuc_Loai1(double& res_real, double& res_virt) {
 	if (a == 0 && b == 0 && c == 0 && d == 0) return 2; // Phuong Trinh Vo So Nghiem
 	if (a == 0 && b == 0) return 1; // Phuong Trinh Khong Ton Tai Nghiem
 
-	res_real = 1.0 * (1ll * a * c + 1ll * b * d) / (1ll * c * c + 1ll * d * d);
-	res_virt = -1.0 * (1ll * a * d - 1ll * b * c) / (1ll * c * c + 1ll * d * d);
+	// (a + bi)x + (c + di) = 0
+	// x = -(c + di) / (a + bi)
+	// x = -(c + di) * (a - bi) / (a * a + b * b)
+	// x = -[ac - bc * i + ad * i + b * d)] / (a * a + b * b)
+	// x = -[ac + bd + (ad - bc) * i] / (a * a + b * b)
+	// x = [-ac - bd - (ad - bc) * i] / (a * a + b * b)
+	// x = -[ac + bd] / (a * a + b * b) - (ad - bc) / (a * a + b * b)
+
+	res_real = -1.0 * (1ll * a * c + 1ll * b * d) / (1ll * a * a + 1ll * b * b);
+	res_virt = -1.0 * (1ll * a * d - 1ll * b * c) / (1ll * a * a + 1ll * b * b);
 	
 	return 0;
 }
