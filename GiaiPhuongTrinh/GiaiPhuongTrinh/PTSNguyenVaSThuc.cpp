@@ -60,13 +60,14 @@ void XuatNghiem_PT1_Thuc(double a, double b)
     switch (Giaipt1_Thuc(a, b, x))
     {
     case 3:
-        cout << "X = " << x << endl;
+        if (x == 0) cout << "X = 0\n";
+        else cout << "X = " << x << endl;
         break;
     case 1:
-        cout << "Vo so nghiem\n";
+        cout << "Phuong trinh vo so nghiem\n";
         break;
     case 2:
-        cout << "Vo nghiem\n";
+        cout << "Phuong trinh vo nghiem\n";
         break;
     }
 }
@@ -78,13 +79,14 @@ void XuatNghiem_PT2_Thuc(double a, double b, double c, double d)
     switch (Giaipt2_Thuc(a, b, c, d, x))
     {
     case 1: case 2: case 5:
-        cout << "X = " << x << endl;
+        if (x == 0) cout << "X = 0\n";
+        else cout << "X = " << x << endl;
         break;
     case 3:
-        cout << "Vo so nghiem \n";
+        cout << "Phuong trinh vo so nghiem \n";
         break;
     case 4:
-        cout << "Vo nghiem \n";
+        cout << "Phuong trinh vo nghiem \n";
         break;
     }
 
