@@ -57,6 +57,7 @@ int GiaiPTphansoloai1(int a, int b, int c, int d, long long& Tu, long long& Mau)
 		Tu /= G;
 		Mau /= G;
 	}
+	return 0;
 }
 int GiaiPTphansoloai2(int a, int b, int c, int d, int e, int f, int g, int h, long long& Tu, long long& Mau)
 {
@@ -84,4 +85,5 @@ int GiaiPTphansoloai2(int a, int b, int c, int d, int e, int f, int g, int h, lo
 		Tu /= G;
 		Mau /= G;
 	}
+	return 0;
 }
